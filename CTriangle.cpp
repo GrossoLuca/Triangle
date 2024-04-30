@@ -25,7 +25,7 @@ Triangle::~Triangle()
 }  
 
 
-/// @brief sets the value of the four sides 
+/// @brief sets the value of the three sides 
 /// @param s1 side 1 
 /// @param s2 side 2 
 /// @param s3 side 3
@@ -62,7 +62,7 @@ void Triangle::Init()
 }
 
 /// @brief initialization of the object as a copy of an object 
-/// @param r reference to the object that should be copied 
+/// @param o reference to the object that should be copied 
 void Triangle::Init(const Triangle &o) 
 {
 	Init();
