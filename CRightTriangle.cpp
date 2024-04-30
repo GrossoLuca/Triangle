@@ -26,7 +26,7 @@ RightT::RightT(float base, float height)
 	cout << "RightT - constructor" << endl;
 
 	if (base <= 0. || height <= 0.) {
-		WarningMessage("constructor: diagonals should be > 0"); 
+		WarningMessage("constructor: sides should be > 0"); 
 		SetDim(0,0);
 	}
 	else
