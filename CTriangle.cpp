@@ -43,7 +43,11 @@ void Triangle::SetSides(float s1, float s2, float s3)
 /// @return reference to the object on the left side of the operator 
 Triangle& Triangle::operator=(const Triangle &o) 
 { 
-	return *this;	
+	cout << "Triangle - operator =" << endl;
+
+	Init(o);
+
+	return *this;
 }
 
 /// @brief overload of operator == 
@@ -51,6 +55,8 @@ Triangle& Triangle::operator=(const Triangle &o)
 /// @return always false 
 bool Triangle::operator==(const Triangle &o) 
 {
+	if (o.sides[0]==sides[0] || o.sides[1]==sides[1] || o.sides[2]==sides[2])
+		return true;
 	return false;
 }
 
@@ -66,9 +72,7 @@ void Triangle::Init()
 void Triangle::Init(const Triangle &o) 
 {
 	Init();
-	sides[0] = o.sides[0]; 
-	sides[1] = o.sides[1]; 
-	sides[2] = o.sides[2]; 	
+	SetSides(o.sides[0],o.sides[1],o.sides[2]);
 }
 
 /// @brief total reset of the object  
