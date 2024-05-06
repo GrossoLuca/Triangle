@@ -1,8 +1,13 @@
-/// \file CIsoscelesT.cpp
-///	\brief class IsoscelesT: implementation of the functions
-///
-///	Details.
-///
+/**
+ * @file CIsoscelesTriangle.cpp
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Implementation of functions. Class Isosceles Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 #include<iostream> 
 #include<cmath>
@@ -18,7 +23,7 @@ IsoscelesT::IsoscelesT()
 
 /// @brief Constructor
 /// @param base base of triangle
-/// @param height height of triangle
+/// @param side two of the equal sides of triangle
 IsoscelesT::IsoscelesT(float base, float side) 
 {
 	Init();
@@ -94,7 +99,7 @@ void IsoscelesT::Reset()
 
 /// @brief set the dimensions of triangle
 /// @param base base of triangle
-/// @param height height of triangle
+/// @param s sides of triangle
 void IsoscelesT::SetDim(float b, float s) 
 {
 	base=b;
@@ -105,7 +110,7 @@ void IsoscelesT::SetDim(float b, float s)
 
 /// @brief give the dimensions of triangle
 /// @param base base of triangle
-/// @param height height of triangle
+/// @param s sides of triangle
 void IsoscelesT::GetDim(float &b, float &s) 
 {
 	b=base;

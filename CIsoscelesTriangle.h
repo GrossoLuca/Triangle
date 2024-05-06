@@ -1,8 +1,13 @@
-/*! \file CIsoscelesT.h
-	\brief Declaration of the class Isosceles Triangle
-
-	Details.
-*/
+/**
+ * @file CIsoscelesTriangle.h
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Declaration of functions. Class Isosceles Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 
 #ifndef ISOSCELEST_H

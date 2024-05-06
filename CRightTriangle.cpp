@@ -1,8 +1,13 @@
-/// \file CRightT.cpp
-///	\brief class RightT: implementation of the functions
-///
-///	Details.
-///
+/**
+ * @file CRightTriangle.cpp
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Implementation of functions. Class Right Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 #include<iostream> 
 #include<cmath>

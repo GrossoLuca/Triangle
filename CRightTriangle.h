@@ -1,8 +1,13 @@
-/*! \file CRightT.h
-	\brief Declaration of the class Right Triangle
-
-	Details.
-*/
+/**
+ * @file CRightTriangle.h
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Declaration of functions. Class Right Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 
 #ifndef RIGHTT_H

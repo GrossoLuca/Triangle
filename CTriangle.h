@@ -1,8 +1,13 @@
-/*! \file CTriangle.h
-	\brief Declaration of the general class Triangle
-
-	Details.
-*/
+/**
+ * @file CTriangle.h
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Declaratoin of functions. Class generic Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 
 #ifndef TRIANGLE_H
@@ -20,7 +25,7 @@ protected:
 
 	float sides[3];
 	
-	void SetSides(float s1, float s2, float s3); 
+	void SetSides(float s0, float s1, float s2); 
 
 public:
 

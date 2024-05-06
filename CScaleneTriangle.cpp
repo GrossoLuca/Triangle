@@ -1,8 +1,13 @@
-/// \file CScaleneT.cpp
-///	\brief class ScaleneT: implementation of the functions
-///
-///	Details.
-///
+/**
+ * @file CScaleneTriangle.cpp
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Implementation of functions. Class Scalene Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 #include<iostream> 
 #include<cmath>
@@ -16,9 +21,10 @@ ScaleneT::ScaleneT()
 	Init();
 }
 
-/// @brief Constructor
-/// @param base base of triangle
-/// @param height height of triangle
+/// @brief constructor
+/// @param s0 side 0
+/// @param s1 side 1
+/// @param s2 side 2
 ScaleneT::ScaleneT(float s0, float s1, float s2) 
 {
 	Init();
@@ -97,9 +103,10 @@ void ScaleneT::Reset()
 	SetDim(0,0,0);	
 }
 
-/// @brief set the dimensions of triangle
-/// @param base base of triangle
-/// @param height height of triangle
+/// @brief function to set dimensions
+/// @param s0 side 0
+/// @param s1 side 1
+/// @param s2 side 2
 void ScaleneT::SetDim(float s0, float s1, float s2) 
 {
 	sides[0]=s0;
@@ -108,9 +115,10 @@ void ScaleneT::SetDim(float s0, float s1, float s2)
 	return;
 }
 
-/// @brief give the dimensions of triangle
-/// @param base base of triangle
-/// @param height height of triangle
+/// @brief give the dimension of existing triangle
+/// @param s0 side 0
+/// @param s1 side 1
+/// @param s2 side 2
 void ScaleneT::GetDim(float &s0, float &s1, float &s2) 
 {
 	s0=sides[0];

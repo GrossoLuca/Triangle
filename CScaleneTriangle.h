@@ -1,8 +1,13 @@
-/*! \file CScaleneTriangle.h
-	\brief Declaration of the class Right Triangle
-
-	Details.
-*/
+/**
+ * @file CScaleneTriangle.h
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Declaration of functions. Class Scalene Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 
 
 #ifndef SCALENET_H

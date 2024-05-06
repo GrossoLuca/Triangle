@@ -1,3 +1,14 @@
+/**
+ * @file CTriangle.cpp
+ * @author Luca Grosso (grossolu@icloud.com)
+ * @brief Implementation of functions. Class generic Triangle
+ * @version 0.1
+ * @date 2024-05-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "CTriangle.h"
 
 /// @brief default constructor 
@@ -26,14 +37,14 @@ Triangle::~Triangle()
 
 
 /// @brief sets the value of the three sides 
+/// @param s0 side 0 
 /// @param s1 side 1 
-/// @param s2 side 2 
-/// @param s3 side 3
-void Triangle::SetSides(float s1, float s2, float s3) 
+/// @param s2 side 2
+void Triangle::SetSides(float s0, float s1, float s2) 
 {	
-	sides[0] = s1;
-	sides[1] = s2;
-	sides[2] = s3;
+	sides[0] = s0;
+	sides[1] = s1;
+	sides[2] = s2;
 	
 	return;
 } 
