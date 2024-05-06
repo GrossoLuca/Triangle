@@ -74,10 +74,15 @@ ScaleneT& ScaleneT::operator=(const ScaleneT &r)
 
 /// @brief overload of operator == 
 /// @param r reference to the object on the right side of the operator 
-/// @return true if the two objects have the same base and the same height  
+/// @return true if the two objects have the same sides, regardless of the  orientation
 bool ScaleneT::operator==(const ScaleneT &r) 
 { 
-	if (r.sides[0] == sides[0] && r.sides[1] == sides[1] && r.sides[2] == sides [2])
+	if ((r.sides[0] == sides[0] && r.sides[1] == sides[1] && r.sides[2] == sides [2]) ||
+		(r.sides[0] == sides[0] && r.sides[1] == sides[2] && r.sides[2] == sides [1]) ||
+		(r.sides[0] == sides[1] && r.sides[1] == sides[2] && r.sides[2] == sides [0]) ||
+		(r.sides[0] == sides[1] && r.sides[1] == sides[0] && r.sides[2] == sides [2]) ||
+		(r.sides[0] == sides[2] && r.sides[1] == sides[0] && r.sides[2] == sides [1]) ||
+		(r.sides[0] == sides[2] && r.sides[1] == sides[1] && r.sides[2] == sides [0]) )
 		return true;
 	return false;
 }

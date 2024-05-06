@@ -39,7 +39,7 @@ public:
 	/// @name OPERATORS
 	/// @{
 	Triangle& operator=(const Triangle &o); 
-	bool operator==(const Triangle &o);
+	bool operator==(const Triangle &r);
 	/// @}
 	
 	/// @name BASIC HANDLING

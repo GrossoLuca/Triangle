@@ -62,11 +62,16 @@ Triangle& Triangle::operator=(const Triangle &o)
 }
 
 /// @brief overload of operator == 
-/// @param o reference to the object on the right side of the operator 
-/// @return always false 
-bool Triangle::operator==(const Triangle &o) 
+/// @param r reference to the object on the right side of the operator 
+/// @return true if the two objects have the same sides, regardless of the orientation
+bool Triangle::operator==(const Triangle &r) 
 {
-	if (o.sides[0]==sides[0] || o.sides[1]==sides[1] || o.sides[2]==sides[2])
+	if ((r.sides[0] == sides[0] && r.sides[1] == sides[1] && r.sides[2] == sides [2]) ||
+		(r.sides[0] == sides[0] && r.sides[1] == sides[2] && r.sides[2] == sides [1]) ||
+		(r.sides[0] == sides[1] && r.sides[1] == sides[2] && r.sides[2] == sides [0]) ||
+		(r.sides[0] == sides[1] && r.sides[1] == sides[0] && r.sides[2] == sides [2]) ||
+		(r.sides[0] == sides[2] && r.sides[1] == sides[0] && r.sides[2] == sides [1]) ||
+		(r.sides[0] == sides[2] && r.sides[1] == sides[1] && r.sides[2] == sides [0]) )
 		return true;
 	return false;
 }
