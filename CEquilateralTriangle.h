@@ -57,7 +57,6 @@ public:
 	void GetDim(float &s);
 	float GetSide();
     float GetHeight();
-	float GetArea();
 	/// @}
 	
 	

@@ -62,8 +62,6 @@ public:
 	float GetHypo();
 	float GetSide();
 	void GetAngles(float &a1, float &a2);	
-	
-	float GetArea();
 	/// @}
 	
 	

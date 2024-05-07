@@ -53,6 +53,7 @@ public:
 	/// @name GETTERS
 	/// @{
 	float GetPerimeter();
+	virtual float GetArea();
 	void GetSides(float &s0, float &s1, float &s2);
 	/// @}
 	

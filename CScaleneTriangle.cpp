@@ -132,14 +132,6 @@ void ScaleneT::GetDim(float &s0, float &s1, float &s2)
 	return;
 }
 
-/// @brief computes the area of the object
-/// @return the area 
-float ScaleneT::GetArea() 
-{	
-    float p=GetPerimeter()/2;
-	return (sqrt(p*(p-sides[0])*(p-sides[1])*(p-sides[2])));
-}
-
 /// @brief write an error message 
 /// @param string message to be printed
 void ScaleneT::ErrorMessage(const char *string) 

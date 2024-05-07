@@ -104,6 +104,14 @@ float Triangle::GetPerimeter()
 	return (sides[0]+sides[1]+sides[2]);
 } 
 
+/// @brief Get area of generic triangle
+/// @return float valueo of area
+float Triangle::GetArea()
+{
+	float p=GetPerimeter()/2;
+	return (sqrt(p*(p-sides[0])*(p-sides[1])*(p-sides[2])));
+}
+
 /// @brief get the sides of the object 
 /// @param s0 side 0 
 /// @param s1 side 1

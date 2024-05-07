@@ -126,13 +126,6 @@ float EquilateralT::GetHeight()
     return (sqrt(3.)/2)*side;
 }
 
-/// @brief computes the area of the object
-/// @return the area 
-float EquilateralT::GetArea() 
-{	
-	return ((sqrt(3.)/4.)*side*side);
-}
-
 /// @brief write an error message 
 /// @param string message to be printed
 void EquilateralT::ErrorMessage(const char *string) 

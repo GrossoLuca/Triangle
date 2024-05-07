@@ -141,13 +141,6 @@ float IsoscelesT::GetHeight()
     return height;
 }
 
-/// @brief computes the area of the object
-/// @return the area 
-float IsoscelesT::GetArea() 
-{	
-	return (base*GetHeight()/2);
-}
-
 /// @brief return the values of the angles
 /// @param a1 Base angles
 /// @param a2 Height angle

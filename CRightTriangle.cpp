@@ -141,13 +141,6 @@ float RightT::GetHypo()
 	return hypo;
 }
 
-/// @brief computes the area of the object
-/// @return the area 
-float RightT::GetArea() 
-{	
-	return (base*height/2);
-}
-
 /// @brief return the values of the angles
 /// @param a1 Base angle
 /// @param a2 Height angle
