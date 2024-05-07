@@ -123,7 +123,7 @@ float EquilateralT::GetSide()
 /// @return float value of Height
 float EquilateralT::GetHeight() 
 {
-    return (sqrt(3.)/2)*side;
+    return ((float)sqrt(3)/2)*side;
 }
 
 /// @brief write an error message 
